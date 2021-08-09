@@ -1,9 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Main /> should render the reading 1`] = `
-<main>
-  <h1>
-    Gatsby do Zero ao Avançado
+exports[`<Main /> should render the heading and the paragraph 1`] = `
+.c0 {
+  width: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  color: #9a9a9a;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  -webkit-letter-spacing: 0.04em;
+  -moz-letter-spacing: 0.04em;
+  -ms-letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.c2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 40px;
+}
+
+.c3 {
+  font-size: 18px;
+  line-height: 23px;
+  color: #484848;
+}
+
+<main
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    Gatsby Avançado
+  </h2>
+  <h1
+    class="c2"
+  >
+    Construindo um site com Gastby, graphQL, Storybook e testes automatizados
   </h1>
+  <p
+    class="c3"
+  >
+    Seja bem vindo ao curso de Gatsby: Do zero ao avançado, onde vamos aprender a configurar o Gatsby com Typescript, Storybook, TDD, graphQL e styled components.
+  </p>
 </main>
 `

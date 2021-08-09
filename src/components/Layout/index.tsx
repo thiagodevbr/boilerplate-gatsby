@@ -1,4 +1,5 @@
-import * as React from 'react'
+import { GlobalStyles } from '../../styles/global'
+import * as S from './styles'
 
 export type LayoutProps = {
   children: React.ReactNode
@@ -6,9 +7,10 @@ export type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <>
+    <S.Wrapper>
+      <GlobalStyles />
       <main>{children}</main>
-    </>
+    </S.Wrapper>
   )
 }
 

@@ -1,10 +1,9 @@
-import * as React from 'react'
-
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
+import { Main } from '../components/Main'
 
 const IndexPage: React.FC = () => (
   <Layout>
-    <h1>gatsby do zero ao avançado</h1>
+    <Main />
   </Layout>
 )
 
