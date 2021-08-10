@@ -74,7 +74,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
-    "test:watch": "yarn test --watch",
+    "test:watch": "yarn test --watchAll",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "prepare": "husky install",
     "storybook": "start-storybook -s ./src/images -p 6006",
