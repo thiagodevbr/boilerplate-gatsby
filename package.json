@@ -30,14 +30,22 @@
     "typescript-eslint": "^0.0.1-alpha.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.15.0",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/builder-webpack5": "^6.3.7",
+    "@storybook/manager-webpack5": "^6.3.7",
+    "@storybook/react": "^6.3.7",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.24",
     "@types/styled-components": "^5.1.12",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
+    "babel-loader": "^8.2.2",
     "babel-preset-gatsby": "^1.11.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -49,6 +57,7 @@
     "jest": "^27.0.6",
     "jest-styled-components": "^7.0.5",
     "lint-staged": "^11.1.2",
+    "plop": "^2.7.4",
     "prettier": "2.3.2",
     "typescript": "^4.3.5"
   },
@@ -66,7 +75,10 @@
     "clean": "gatsby clean",
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "prepare": "husky install"
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "prepare": "husky install",
+    "storybook": "start-storybook -s ./src/images -p 6006",
+    "build-storybook": "build-storybook -s ./src/images"
   },
   "lint-staged": {
     "src/**/*": [
@@ -80,5 +92,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "files": [
+    "./styled-components.d.ts"
+  ]
 }

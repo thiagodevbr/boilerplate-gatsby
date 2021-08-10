@@ -37,9 +37,9 @@ exports[`<Main /> should render the heading and the paragraph 1`] = `
 }
 
 .c3 {
-  font-size: 18px;
-  line-height: 23px;
-  color: #484848;
+  font-size: 1.8rem;
+  line-height: 24px;
+  color: #101010;
 }
 
 <main
@@ -58,7 +58,7 @@ exports[`<Main /> should render the heading and the paragraph 1`] = `
   <p
     class="c3"
   >
-    Seja bem vindo ao curso de Gatsby: Do zero ao avançado, onde vamos aprender a configurar o Gatsby com Typescript, Storybook, TDD, graphQL e styled components.
+    Seja bem vindo ao curso de Gatsby: Do zero ao avançado, onde vamos aprender a configurar o Gatsby com Typescript, Storybook, TDD, graphQL e styled components
   </p>
 </main>
 `

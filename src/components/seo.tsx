@@ -28,6 +28,7 @@ function Seo({ description, lang, meta, title }: SEOProps) {
             title
             description
             author
+            siteUrl
           }
         }
       }

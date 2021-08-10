@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `My porfólio site`,
     description: `A website to show my portfólio and my jobs using Gatsby, graphQL, Storybook and tests with Jest`,
-    author: `Thiago Brito`
-    //siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `Thiago Brito`,
+    siteUrl: `https://yarndev.com.br`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

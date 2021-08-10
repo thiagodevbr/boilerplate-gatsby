@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.main`
   width: 500px;
@@ -27,7 +27,9 @@ export const Title = styled.h1`
 `
 
 export const Description = styled.p`
-  font-size: 18px;
-  line-height: 23px;
-  color: #484848;
+  ${({ theme }) => css`
+    font-size: ${theme.font.size.xsmall};
+    line-height: ${theme.font.lineHeight.superaway};
+    color: ${theme.color.gray900};
+  `}
 `

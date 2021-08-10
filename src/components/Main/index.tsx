@@ -1,18 +1,17 @@
 import * as S from './styles'
 
-export const Main = () => {
+export type MainProps = {
+  header: string
+  title: string
+  description: string
+}
+
+export const Main: React.FC<MainProps> = ({ description, header, title }) => {
   return (
     <S.Wrapper>
-      <S.Header>Gatsby Avançado</S.Header>
-      <S.Title>
-        Construindo um site com Gastby, graphQL, Storybook e testes
-        automatizados
-      </S.Title>
-      <S.Description>
-        Seja bem vindo ao curso de Gatsby: Do zero ao avançado, onde vamos
-        aprender a configurar o Gatsby com Typescript, Storybook, TDD, graphQL e
-        styled components.
-      </S.Description>
+      <S.Header>{header}</S.Header>
+      <S.Title>{title}</S.Title>
+      <S.Description>{description}</S.Description>
     </S.Wrapper>
   )
 }

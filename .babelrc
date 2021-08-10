@@ -3,5 +3,26 @@
     "babel-preset-gatsby",
     "@babel/preset-typescript",
     ["@babel/preset-react", { "runtime": "automatic" }]
-  ]
+  ],
+  "plugins": [
+    [
+      "babel-plugin-styled-components", {
+        "ssr": true,
+        "displayName": true
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components", {
+            "ssr": false,
+            "displayName": false
+          }
+
+        ]
+      ]
+    }
+  }
 }

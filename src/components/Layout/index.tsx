@@ -1,4 +1,6 @@
+import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from '../../styles/global'
+import { theme } from '../../styles/theme'
 import * as S from './styles'
 
 export type LayoutProps = {
@@ -7,10 +9,10 @@ export type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <S.Wrapper>
+    <ThemeProvider theme={theme}>
+      <S.Wrapper>{children}</S.Wrapper>
       <GlobalStyles />
-      <main>{children}</main>
-    </S.Wrapper>
+    </ThemeProvider>
   )
 }
 
